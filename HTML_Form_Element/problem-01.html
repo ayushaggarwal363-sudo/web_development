@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Assignment Problem 1: College Admission Form</h1>
+    <p>Fill out the following form to apply for admission to the college. Please provide accurate personal, academic, and contact information.</p>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNbGoTLoyp57KwkcQMLfW_SXtdpVYHSplOfmzKad7tFQ&s=10"
+         alt="College campus"
+         width="500">
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <p>
+            <label for="fullName">Full Name:</label><br>
+            <input type="text" id="fullName" name="fullName" required minlength="3" maxlength="60">
+        </p>
+
+        <p>
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required>
+        </p>
+
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+            <label for="mobile">Mobile Number:</label><br>
+            <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}" maxlength="10"
+                   placeholder="10-digit mobile number">
+        </p>
+
+        <p>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required minlength="8" maxlength="30">
+        </p>
+
+        <p>
+            <label for="gender">Gender:</label><br>
+            <select id="gender" name="gender" required>
+                <option value="">-- Select Gender --</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="category">Category:</label><br>
+            <select id="category" name="category" required>
+                <option value="">-- Select Category --</option>
+                <option value="general">General</option>
+                <option value="obc">OBC</option>
+                <option value="sc">SC</option>
+                <option value="st">ST</option>
+                <option value="ews">EWS</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="address">Address:</label><br>
+            <textarea id="address" name="address" rows="5" cols="50" required minlength="10" maxlength="250"
+                      placeholder="Enter your permanent address"></textarea>
+        </p>
+
+        <p>
+            <label for="qualification">Previous Qualification:</label><br>
+            <input type="text" id="qualification" name="qualification" required maxlength="80">
+        </p>
+
+        <p>
+            <label for="percentage">Percentage / CGPA:</label><br>
+            <input type="number" id="percentage" name="percentage" min="0" max="100" step="0.01" required>
+        </p>
+
+        <p>
+            <label for="passingYear">Passing Year:</label><br>
+            <input type="number" id="passingYear" name="passingYear" min="1950" max="2026" required>
+        </p>
+
+        <p>
+            <label for="schoolCollege">School / College Name:</label><br>
+            <input type="text" id="schoolCollege" name="schoolCollege" required minlength="2" maxlength="100">
+        </p>
+
+        <p>
+            <label for="course">Course / Program:</label><br>
+            <select id="course" name="course" required>
+                <option value="">-- Select Course --</option>
+                <option value="bca">BCA</option>
+                <option value="bba">BBA</option>
+                <option value="btech">B.Tech</option>
+                <option value="bcom">B.Com</option>
+                <option value="ba">B.A.</option>
+            </select>
+        </p>
+
+        <p>
+            <strong>Mode of Study:</strong><br>
+            <input type="radio" id="regular" name="studyMode" value="regular" required>
+            <label for="regular">Regular</label>
+
+            <input type="radio" id="distance" name="studyMode" value="distance">
+            <label for="distance">Distance</label>
+        </p>
+
+        <p>
+            <label for="admissionDate">Preferred Admission Date:</label><br>
+            <input type="date" id="admissionDate" name="admissionDate" min="2026-01-01" >
+        </p>
+
+        <p>
+            <label for="document">Upload Admission Document:</label><br>
+            <input type="file" id="document" name="document" accept=".pdf,.jpg,.jpeg,.png">
+        </p>
+
+        <p>
+            <input type="checkbox" id="admissionConsent" name="admissionConsent" required>
+            <label for="admissionConsent">I confirm that the information provided above is correct.</label>
+        </p>
+
+        <p>
+            <input type="submit" value="Submit Application">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+
+    <p>
+        <a href="https://www.example.com" target="_blank">Visit the College Website</a>
+    </p>
+</body>
+</html>

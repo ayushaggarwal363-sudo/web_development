@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>clinc visit</title>
+</head>
+<body>
+    <h1>clinc vist form</h1><hr>
+    <p>
+        <form>
+            <label for="patientName">Patient Name:</label><br>
+            <input type="text" placeholder="enter name" id="patientName" required><br>
+            <label for="age">age</label><br>
+            <input type="number" placeholder="enter age" id="patientage" required><br>
+            <label for="hieght">heigh in cm:</label><br>
+            <input type="number" placeholder="enter height" id="height" required><br>
+            <label for="dateofvist">select date:</label><br>
+            <input type="Date" id="date" name="dateofvist" requiredmin="2026-01-01"><br>
+            <label for="timeslot" required>time slot</label><br>
+            <input type="radio" name="timeslot" value="12:00-04:00">12:00-04:00<br>
+            <input type="radio" name="timeslot" value="06:00-06:00">06:00-06:00<br>
+            <label for="select doctor">select doctor</label><br>
+            <select id="doctor" name="selectdoctor" required>
+                <option value="">--select doctor--</option>
+                <option value="dr.amit aggarwal">dr.amit aggarwal-radio</option>
+                <option value="dr.tanya jain">dr.tanya jain-radio</option>
+                <option value="dr.arjun aggarwal">dr.arjun aggarwal-pediatrician</option>
+                <option value="dr.shaveena aggarwal">dr.shaveena aggarwal-neuro</option>
+                <option value="dr.aditya aggarwal">dr.aditya aggarwal-gerenal</option>
+                <option value="dr.gunjan anggarwal">dr.gunjan aggarwal-derma</option>
+        
+            </select><br>
+            <label for="visttype" required>visit type</label><br>
+            <input type="radio" name="visit type" >new patient<br>
+            <input type="radio" name="visit type" >follow-up<br>
+            <input type="radio" name="visit type" >consultation<br>
+            <label for="visttype" required>enter your concern</label><br>
+            <input type="text" id="visttype" required><br>
+              <input type="checkbox" id="appointmentTerms" name="appointmentTerms" required>
+            <label for="appointmentTerms">I confirm that I accept the appointment terms and provide accurate information.</label><br>
+        <button type="submit" value="submit form">submit</button>
+            
+
+        </form>
+        <h2>timming</h2>
+        <table border="1" cellsapcing="1" bgcolor="red">
+            <tr>
+                <th>day</th>
+                <th>moring</th>
+                <th>eveing</th>
+            </tr>
+            <tr>
+                <td>monday-friday</td>
+                <td>09:00 AM - 01:00 PM</td>
+                <td>04:00 PM - 06:00 PM</td>
+            </tr>
+            <tr>
+            
+                <td>Saturday</td>
+            
+                <td>09:00 AM - 01:00 PM</td>
+            
+                <td>Closed</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>Closed</td>
+                <td>Closed</td>
+            </tr>
+
+        </table><hr>
+
+        <a href="https://www.google.com/maps/dir//Om+Imaging+Centre,+8%2F31,+Block+8,+Rajendra+Nagar,+Sahibabad,+Ghaziabad,+Uttar+Pradesh+201005/@28.4655616,77.5028736,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x390cfbf8569082a7:0xffdf322a39bb0538!2m2!1d77.3599929!2d28.6886262?entry=ttu&g_ep=EgoyMDI2MDgyNi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopnner norefferance">location</a>
+    </p>
+
+    
+</body>
+</html>
